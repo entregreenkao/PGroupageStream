@@ -1,0 +1,224 @@
+HTTP/1.1 200 OK
+Date: Wed, 15 Feb 2012 10:45:13 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=11
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>WsharE公益主控系統</title>
+		<link rel="shortcut Icon"  href="../img/WsharE_logo_mid.png" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+		<!--
+		<link rel="stylesheet" type="text/css" media="screen" href="http://219.85.221.13/WsharE_testv02/lib/css/jquery-ui-1.8.1.custom.css" />
+		-->
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.trirand.com/blog/jqgrid/themes/redmond/jquery-ui-1.8.1.custom.css" />
+		
+		<link rel="stylesheet" href="../lib/jquery/tablesorter.com/docs/css/jq.css" type="text/css" media="print, projection, screen" />
+		<link rel="stylesheet" href="../lib/jquery/tablesorter.com/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+		<style type="text/css"> table tr { text-align:left; } </style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+		
+		<style type="text/css">
+        body {
+            background: #fff;
+            font-family: verdana;
+            padding-top: 0px;
+        }
+        #vtab {
+            margin: auto;
+            width: 1024;
+            height: 2000;
+        }
+        #vtab > ul > li {
+            width: 110px;
+            height: 110px;
+            background-color: #fff !important;
+            list-style-type: none;
+            display: block;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 10px;
+            border: 1px solid #fff;
+            position: relative;
+            border-right: none;
+            opacity: .3;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+        }
+        #vtab > ul > li.home {
+            background: url('img/social_home.png') no-repeat center center;
+        }
+        #vtab > ul > li.login {
+            background: url('img/social_light.png') no-repeat center center;
+        }
+        #vtab > ul > li.support {
+            background: url('img/social_corp.png') no-repeat center center;
+        }
+		#vtab > ul > li.help {
+            background: url('img/social_help.png') no-repeat center center;
+        }
+        #vtab > ul > li.selected {
+            opacity: 1;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+            border: 1px solid #ddd;
+            border-right: none;
+            z-index: 10;
+            background-color: #fafafa !important;
+            position: relative;
+        }
+        #vtab > ul {
+            float: left;
+            width: 110px;
+            text-align: left;
+            display: block;
+            margin: auto 0;
+            padding: 0;
+            position: relative;
+            top: 30px;
+        }
+        #vtab > div {
+			
+            background-color: #fafafa;
+            margin-left: 110px;
+            border: 1px solid #ddd;
+            min-height: 500px;
+            padding: 12px;
+            position: relative;
+            z-index: 9;
+            -moz-border-radius: 20px;
+        }
+        #vtab > div > h4 {
+            color: #800;
+            font-size: 1.2em;
+            border-bottom: 1px dotted #800;
+            padding-top: 5px;
+            margin-top: 0;
+        }
+        #loginForm label {
+            float: left;
+            width: 100px;
+            text-align: right;
+            clear: left;
+            margin-right: 15px;
+        }
+        #loginForm fieldset {
+            border: none;
+        }
+        #loginForm fieldset > div {
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        #loginForm #login {
+            margin-left: 115px;
+        }
+		
+		A:link {text-decoration: none}
+		A:visited {text-decoration: none}
+		A:active {text-decoration: none}
+		A:hover {text-decoration: underline; color: red;}
+    body,td,th {
+	font-family: 微軟正黑體;
+}
+</style>
+
+    <script type="text/javascript">
+        $(function() {
+            var $items = $('#vtab>ul>li');
+            $items.mouseover(function() {
+                $items.removeClass('selected');
+                $(this).addClass('selected');
+
+                var index = $items.index($(this));
+                $('#vtab>div').hide().eq(index).show();
+            }).eq(0).mouseover();
+        });
+    </script>
+	</head>
+    
+    
+
+
+<body>
+	
+	<div  style="font-size:13pt">
+		<table border="0" width='1024'  cellspacing="0">
+			<tr>
+				<td>
+				  <p><strong><span style="font-size:14pt"><img src="img/help_main_new_clip_image002.gif" alt="" width="25" height="32"></span> 我想要增加捐款人數</strong><img src="img/tipdonation.jpg" width="465" height="410" align="right"></p>
+				  <ul>
+                    <li>透過WsharE的搜尋功能，搜尋到對於您的議題會感興趣的幾千人~幾萬人，然後在這些人討論的內容下，留下募款的消息及網址。這樣就可以很快地，將您募款的訊息讓對的人知道。 </li>
+				  </ul>
+				  <p>&nbsp;</p>
+				  <ul>
+				    <li> 例如：您今天舉辦流浪動物的募款活動，您可在有幾千人討論的『流浪動物』的內容下，留下你的募款活動連結。 </li>
+			      </ul>
+				  <p>&nbsp;</p>
+				  <p>&nbsp;</p>
+				  <ul>
+				    <li>凡是曾在這些訊息下，留過言的網友，都會收到您也回應該篇文章的通知。</li>
+			      </ul>
+				  <p>&nbsp;</p>
+				 
+				  <ul>
+				    <hr align="left" width="950" size="1" id="12"color="#CCC">
+				  </ul>
+				  <p><strong><span style="font-size:14pt"><img src="img/help_main_new_clip_image002.gif" alt="" width="25" height="32"></span> 我想要宣傳活動 </strong><strong><img src="./img/04-4.jpg" width="465" height="235" align="right"></strong></p>
+                  <ul>
+                    <li>您可以在多篇文章下，同時留下活動消息及活動網址</li>
+                  </ul>
+                  <ul>
+                    <li>上千萬人可看到此訊息，就可以直接點選網址進一步了解或直接參加。                  </li>
+                  </ul>
+                  <ul>
+                    <li>凡是曾在這些訊息下，也留過言的網友，都會收到您也回應該篇文章的通知。</li>
+                  </ul>
+                  <p>&nbsp;</p>
+                  
+                  <ul>
+                    <hr align="left" width="950" size="1" id="122"color="#CCC">
+                  </ul>
+                  <p><strong><span style="font-size:14pt"><img src="img/help_main_new_clip_image002.gif" alt="" width="25" height="32"></span> 我的接文內容可以放&quot;連結&quot;嗎?</strong>  <img src="./img/tipevent.jpg" width="465" height="174" align="right"></p>
+
+<ul>
+  <li>可以。				    只要在輸入接文內容時，輸入連結網址，則發佈之後，瀏覽者看到即可直接點擊網址，進入頁面。			      </li></ul>
+
+			      <p>&nbsp;</p>
+			      <p>&nbsp;</p>
+			      <ul>
+			        <hr align="left" width="950" size="1" id="123"color="#CCC">
+			      </ul>
+			      <p><strong><span style="font-size:14pt"><img src="img/help_main_new_clip_image002.gif" alt="" width="25" height="32"></span> 我想要找到社群上最熱門的訊息 </strong><img src="./img/tipadvancesearch.jpg" width="465" height="265" align="right"></p>
+				    <ul>
+				      <li>在進階搜尋，輸入你希望搜尋到的內容，要達到多少個”讚”及回應數，例如：設定讚的數量500個，回應數量100個。 </li>
+			      </ul>
+				    <p>&nbsp;</p>
+				    <p>&nbsp;</p>
+				    <p>&nbsp;</p>
+				    <p>&nbsp;</p>
+				
+			      <ul>
+                      <hr align="left" width="950" size="1" id="124"color="#CCC">
+                  </ul>
+                  <p><strong><span style="font-size:14pt"><img src="img/help_main_new_clip_image002.gif" alt="" width="25" height="32"></span> 我想要在社群上找到特定的消息 </strong></p>
+				    <ul>
+				      <li>在查詢社群網路的欄位中，輸入關鍵字，即可搜尋到相關的熱門文章。</li>
+			      </ul>
+		      <p>&nbsp;</p></td>
+		  <tr>
+		</table>
+	</div>
+
+</body>
+</html>

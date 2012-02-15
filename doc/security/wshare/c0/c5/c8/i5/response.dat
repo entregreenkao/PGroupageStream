@@ -1,0 +1,13 @@
+HTTP/1.1 200 Partial Content
+Date: Wed, 15 Feb 2012 10:42:36 GMT
+Server: Apache
+Last-Modified: Sat, 11 Jun 2011 19:13:50 GMT
+ETag: "82501a-471-4a5747c79f780"
+Accept-Ranges: bytes
+Content-Length: 1137
+Content-Range: bytes 0-1136/1137
+Keep-Alive: timeout=10, max=14
+Connection: Keep-Alive
+Content-Type: text/css
+
+#sites-chrome-header .sites-header-primary-row{display:none}#sites-chrome-sidebar-left,#sites-chrome-sidebar-right{width:150px!important}.sites-subfooter{overflow:auto}#sites-chrome-everything,#sites-chrome-footer,#sites-chrome-everything h1,#sites-chrome-everything h2,#sites-chrome-everything h3,#sites-chrome-everything h4,#sites-chrome-everything h5,#sites-chrome-everything h6,span #sites-page-title,#sites-chrome-everything .goog-tree-item-label,#sites-chrome-everything input{font-family:pmingliu,serif!important}.sites-canvas-sidebar{width:150px}body #sites-header-title h2{font-family:pmingliu,serif!important;font-size:18px!important}#sites-canvas .sites-embed .sites-embed-title{font-family:pmingliu,serif!important}#sites-chrome-sidebar-left .sites-sidebar-nav a,#sites-chrome-sidebar-right .sites-sidebar-nav a{color:#24355d!important}#sites-chrome-header-wrapper{border-bottom:0px!important}.sites-header-nav-dropdown-menu{font-family:pmingliu,serif!important}#sites-chrome-header .sites-header-nav a:hover{color:#000000!important}#sites-chrome-header .sites-header-nav-dropdown-menuitem-content a.current{font-weight:bold}

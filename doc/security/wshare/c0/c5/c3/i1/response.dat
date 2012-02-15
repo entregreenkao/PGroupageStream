@@ -1,0 +1,16 @@
+HTTP/1.1 403 Forbidden
+Date: Wed, 15 Feb 2012 10:45:48 GMT
+Server: Apache
+Accept-Ranges: bytes
+Keep-Alive: timeout=10, max=6
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+
+<html><head><title>403 Permission Denied</title></head>
+<body bgcolor=white>
+<h1>403 Permission Denied</h1>
+
+You do not have permission for this request /test/just_marketing/.htaccess.aspx--&gt;&quot;&gt;'&gt;'&quot;&lt;sfi000049v356966&gt;
+
+</body></html>

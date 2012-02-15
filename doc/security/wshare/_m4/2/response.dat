@@ -1,0 +1,21 @@
+HTTP/1.1 200 Partial Content
+Date: Wed, 15 Feb 2012 10:42:36 GMT
+Server: Apache
+Content-Range: bytes 0-407/408
+Content-Length: 408
+Keep-Alive: timeout=10, max=8
+Connection: Keep-Alive
+Content-Type: text/html;charset=ISO-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /WsharE_release/test/just_marketing</title>
+ </head>
+ <body>
+<h1>Index of /WsharE_release/test/just_marketing</h1>
+<ul><li><a href="/WsharE_release/test/"> Parent Directory</a></li>
+<li><a href="just_marketing.php"> just_marketing.php</a></li>
+</ul>
+<address>Apache Server at wshare.us Port 80</address>
+</body></html>

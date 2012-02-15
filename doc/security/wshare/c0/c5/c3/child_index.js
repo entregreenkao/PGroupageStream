@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 11, 'name': 'img', 'dir': 'c0', 'linked': 2, 'url': 'http://wshare.us/test/just_marketing/img/', 'fetched': true, 'code': 404, 'len': 2610, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': '[none]', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 1, 2, 0, 0, 0 ], 'sig': 0xb112d261 },
+  { 'dupe': false, 'type': 12, 'name': 'de.o', 'dir': 'c1', 'linked': 0, 'url': 'http://wshare.us/test/just_marketing/de.o', 'fetched': true, 'code': 404, 'len': 40, 'decl_mime': 'text/html', 'sniff_mime': 'text/plain', 'cset': '[none]', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 3, 1, 0, 0, 0 ], 'sig': 0xad62ad94 },
+  { 'dupe': false, 'type': 13, 'name': 'just_marketing.php', 'dir': 'c3', 'linked': 2, 'url': 'http://wshare.us/test/just_marketing/just_marketing.php', 'fetched': true, 'code': 200, 'len': 8541, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 1, 3, 0, 1, 0 ], 'sig': 0x5adf58a4 }
+];

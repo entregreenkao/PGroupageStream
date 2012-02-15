@@ -1,0 +1,9 @@
+GET /photo/image014.jpg HTTP/1.1
+Host: wshare.us
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.03b
+Range: bytes=0-199999
+Referer: http://wshare.us/
+Cookie: PHPSESSID=ifctqriqgrav799i57p8pq5a61
+

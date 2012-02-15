@@ -1,0 +1,147 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"> <style>
+	.KEYW {color: #933;}
+	.COMM {color: #bbb; font-style: italic;}
+	.NUMB {color: #393;}
+	.STRN {color: #393;}
+	.REGX {color: #339;}
+	.line {border-right: 1px dotted #666; color: #666; font-style: normal;}
+	</style></head><body><pre><span class='line'>  1</span> <span class="KEYW">function</span><span class="WHIT"> </span><span class="NAME">addTab</span><span class="PUNC">(</span><span class="NAME">index</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">content</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'>  2</span> 
+<span class='line'>  3</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">local_index</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">index</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'>  4</span> </span><span class="WHIT">	</span><span class="COMM">//tab_waiting_id[local_index] = global_runtime_tab_id;</span><span class="WHIT">
+<span class='line'>  5</span> </span><span class="WHIT">	</span><span class="COMM">//global_runtime_tab_id++;</span><span class="WHIT">
+<span class='line'>  6</span> </span><span class="WHIT">	</span><span class="WHIT">
+<span class='line'>  7</span> </span><span class="WHIT">	</span><span class="NAME">$</span><span class="PUNC">(</span><span class="STRN">"#PGroupageStream-tab-list"</span><span class="PUNC">)</span><span class="PUNC">.</span><span class="NAME">append</span><span class="PUNC">(</span><span class="STRN">"&lt;li class=\"ui-state-default ui-corner-top\">&lt;a href=\"#PGroupageStream-tabs-"</span><span class="PUNC">+</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="STRN">"\">&lt;span id=\"PGroupageStream-tabs"</span><span class="PUNC">+</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="STRN">"\">"</span><span class="PUNC">+</span><span class="NAME">content</span><span class="PUNC">+</span><span class="STRN">"&lt;/span>&lt;/a>&lt;/li>"</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'>  8</span> </span><span class="WHIT">	</span><span class="WHIT">
+<span class='line'>  9</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">x</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"&lt;li>&lt;a href=\"#PGroupageStream-tabs-"</span><span class="PUNC">+</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="STRN">"\">&lt;span id=\"PGroupageStream-tabs"</span><span class="PUNC">+</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="STRN">"\">"</span><span class="PUNC">+</span><span class="NAME">content</span><span class="PUNC">+</span><span class="STRN">"&lt;/span>&lt;/a>&lt;/li>"</span><span class="WHIT">
+<span class='line'> 10</span> 
+<span class='line'> 11</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">state</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"收尋中..."</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 12</span> </span><span class="WHIT">	</span><span class="WHIT">
+<span class='line'> 13</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"&lt;p style='margin-left:00px; margin-right:00px'>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 14</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;div style='overflow:scroll; height:600px' id=\"PGroupageStream-tabs-"</span><span class="PUNC">+</span><span class="WHIT"> </span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="STRN">"\">"</span><span class="PUNC">;</span><span class="WHIT">                                </span><span class="COMM">//function tabs_select_all(index){</span><span class="WHIT">
+<span class='line'> 15</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;table border='0'>&lt;tr>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 16</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;td width='43' valign='middle' align='right'>&lt;img width='30' src='http://WsharE.us/img/star_select_all.png' id='open_group_page"</span><span class="PUNC">+</span><span class="WHIT"> </span><span class="NAME">index</span><span class="PUNC">+</span><span class="STRN">"' onclick='tabs_select_all("</span><span class="PUNC">+</span><span class="NAME">index</span><span class="PUNC">+</span><span class="STRN">")' />&lt;/td>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 17</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;td valign='center'>全選/全取消&lt;/td>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 18</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;td width='70'>&lt;/td>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 19</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;td height='65'>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 20</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;div id='wait-index-"</span><span class="PUNC">+</span><span class="WHIT"> </span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="STRN">"' style='' >&lt;/div>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 21</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;div id='complete-index-"</span><span class="PUNC">+</span><span class="WHIT"> </span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="STRN">"' style='display:none;' >&lt;img src='http://WsharE.us/img/complete_logo.png' width='30'>&lt;/img>&lt;/div>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 22</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;/td>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 23</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;td valign='middle' width='580'>&lt;b>&lt;span style='font-color:gray;' id='tab-state"</span><span class="PUNC">+</span><span class="NAME">index</span><span class="PUNC">+</span><span class="STRN">"'>"</span><span class="PUNC">+</span><span class="STRN">"123"</span><span class="PUNC">+</span><span class="STRN">"&lt;/span>&lt;/b>&lt;/td>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 24</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;/tr>&lt;/table>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 25</span> </span><span class="WHIT">	</span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">tabs_content</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="STRN">"&lt;/div>&lt;/p>"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 26</span> </span><span class="WHIT">	</span><span class="WHIT">
+<span class='line'> 27</span> </span><span class="WHIT">	</span><span class="NAME">$</span><span class="PUNC">(</span><span class="STRN">"#PGroupageStream-tabs"</span><span class="PUNC">)</span><span class="PUNC">.</span><span class="NAME">append</span><span class="PUNC">(</span><span class="NAME">tabs_content</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 28</span> 
+<span class='line'> 29</span> </span><span class="WHIT">	</span><span class="COMM">//table_content =   "&lt;table id=\"recommended_page_list"+tab_waiting_id[local_index] +"\">&lt;/table>&lt;div id=\"recommended_list_pager"+tab_waiting_id[local_index] +"\">&lt;/div>";</span><span class="WHIT">
+<span class='line'> 30</span> </span><span class="WHIT">	</span><span class="WHIT">
+<span class='line'> 31</span> </span><span class="WHIT">	</span><span class="COMM">//$('#group_page_list_dialog').append(table_content);</span><span class="WHIT">
+<span class='line'> 32</span> </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 33</span> 
+<span class='line'> 34</span> 
+<span class='line'> 35</span> </span><span class="KEYW">function</span><span class="WHIT"> </span><span class="NAME">showPost</span><span class="PUNC">(</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 36</span> </span><span class="WHIT">	</span><span class="COMM">/*
+<span class='line'> 37</span> 	var post_content = "&lt;div id=\'post_content_index_"+ tab_waiting_id[tab_index] +"_"+post_id+"\'>";
+<span class='line'> 38</span> 	//var post_content = "&lt;div id=\'post_content_index_"+post_id+"\'>";
+<span class='line'> 39</span> 	post_content = post_content  + '&lt;table border="0" width="300" style="table-layout: fixed;word-wrap: break-word; overflow: hidden;" >' ;
+<span class='line'> 40</span> 	post_content = post_content  + '&lt;tr>' ;
+<span class='line'> 41</span> 	post_content = post_content  + '&lt;td width="50">' ;
+<span class='line'> 42</span> 	post_content = post_content  + '&lt;div align="center">' ;
+<span class='line'> 43</span> 	post_content = post_content  + '&lt;/div>' ;
+<span class='line'> 44</span> 	post_content = post_content  + '&lt;/td>' ;
+<span class='line'> 45</span> 	post_content = post_content  + '&lt;td width="100" rowspan="3">' ;
+<span class='line'> 46</span> 	post_content = post_content  + '&lt;img width="80" src="'+pic_url+'"  />' ;
+<span class='line'> 47</span> 	post_content = post_content  + '&lt;/td>' ;
+<span class='line'> 48</span> 	post_content = post_content  + '&lt;td width="800" height="88" valign="top">' ;// 以下為可以控制table欄寬的地方
+<span class='line'> 49</span> 	post_content = post_content  + '&lt;img width="35" src="'+groupage_pic+'">&lt;/img>' ;
+<span class='line'> 50</span> 	post_content = post_content  + '&lt;a href="'+post_link+'" style="color:#2C7BBE" target="_blank">&lt;span style="font-size:16px;">'+title+'&lt;/span>&lt;/a>';
+<span class='line'> 51</span> 	post_content = post_content  + '&lt;span>　　&lt;/span>';
+<span class='line'> 52</span> 	post_content = post_content  + '&lt;img src="http://WsharE.us/img/facebook_like_button.jpg" />';
+<span class='line'> 53</span> 	post_content = post_content  + '&lt;b>'+likes+' 人按讚!'+'&lt;/b>&lt;span>　　&lt;/span>';
+<span class='line'> 54</span> 	post_content = post_content  + '&lt;div id="comment-add_'+ local_runtime_post_id +'" style="display:none;">&lt;img src="http://WsharE.us/img/wait_gif.gif" width="30">&lt;/img>&lt;span>接文中...&lt;/span>&lt;/div>';//
+<span class='line'> 55</span> 	post_content = post_content  + '&lt;div id="comment-done_'+ local_runtime_post_id +'" style="display:none;">&lt;img src="http://WsharE.us/img/complete_logo.png" width="30">&lt;/img>&lt;span>接文成功!!&lt;/span>&lt;/div>';
+<span class='line'> 56</span> 	post_content = post_content  + '&lt;br/>';
+<span class='line'> 57</span> 	post_content = post_content  + '&lt;/td>';
+<span class='line'> 58</span> 	post_content = post_content  + '&lt;/tr>';
+<span class='line'> 59</span> 	post_content = post_content  + '&lt;tr height="20">' ;
+<span class='line'> 60</span> 	post_content = post_content  + '&lt;td rowspan="2" valign="top">' ;
+<span class='line'> 61</span> 	post_content = post_content  + '&lt;span>&nbsp;&nbsp;&nbsp;&lt;/span>&lt;img width="28" id="selected-pic'+ local_runtime_post_id +'" src="http://WsharE.us/img/star_select_all.png" onclick="select_post('+local_runtime_post_id+')">&lt;/img>' ;
+<span class='line'> 62</span> 	post_content = post_content  + '&lt;div align="center" style="display:none;">'; //
+<span class='line'> 63</span> 	post_content = post_content  + '&lt;input id="selected-checkbox_'+local_runtime_post_id +'" type="checkbox" value="'+post_id+'">';
+<span class='line'> 64</span> 	post_content = post_content  + '&lt;/div>&lt;/td>';
+<span class='line'> 65</span> 	post_content = post_content  + '&lt;td style="width="10;" valign="top" align="left" style="word-wrap:break-word; overflow:hidden;" id="tabs-'+tab_waiting_id[tab_index]+'_post'+local_runtime_post_id+'">';
+<span class='line'> 66</span> 	post_content = post_content  + '&lt;div width="10" style="word-wrap:break-word; overflow:hidden; font-size:16px;">'+message+'&lt;/div>&lt;p/>';
+<span class='line'> 67</span> 	post_content = post_content  + '&lt;/td>' +'&lt;/tr>' ;
+<span class='line'> 68</span> 	post_content = post_content  + '&lt;tr>' ;
+<span class='line'> 69</span> 	post_content = post_content  + '&lt;td id="tabs-'+tab_waiting_id[tab_index]+'_post_'+local_runtime_post_id+'_likes">';
+<span class='line'> 70</span> 	post_content = post_content  + '&lt;b>'+attachment_name+'&lt;/b>&lt;p/>';
+<span class='line'> 71</span> 	
+<span class='line'> 72</span> 	*/</span><span class="WHIT">
+<span class='line'> 73</span> </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 74</span> 
+<span class='line'> 75</span> </span><span class="KEYW">function</span><span class="WHIT"> </span><span class="NAME">showPGroupagePost</span><span class="PUNC">(</span><span class="NAME">user_groupage_id</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">start_num</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">end_num</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">social_network</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 76</span> </span><span class="WHIT">	</span><span class="NAME">$.ajax</span><span class="PUNC">(</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 77</span> </span><span class="WHIT">		</span><span class="NAME">url</span><span class="PUNC">:</span><span class="STRN">'control.PGroupageStream.php'</span><span class="PUNC">,</span><span class="WHIT">
+<span class='line'> 78</span> </span><span class="WHIT">		</span><span class="NAME">data</span><span class="PUNC">:</span><span class="PUNC">(</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 79</span> </span><span class="WHIT">			</span><span class="NAME">func</span><span class="PUNC">:</span><span class="STRN">'showPGroupagePost'</span><span class="PUNC">,</span><span class="WHIT">
+<span class='line'> 80</span> </span><span class="WHIT">			</span><span class="NAME">user_groupage_id</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">user_groupage_id</span><span class="PUNC">,</span><span class="WHIT">
+<span class='line'> 81</span> </span><span class="WHIT">			</span><span class="NAME">start_num</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">start_num</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="WHIT">
+<span class='line'> 82</span> </span><span class="WHIT">			</span><span class="NAME">end_num</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">end_num</span><span class="PUNC">,</span><span class="WHIT">
+<span class='line'> 83</span> </span><span class="WHIT">			</span><span class="NAME">social_network</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">social_network</span><span class="WHIT">
+<span class='line'> 84</span> </span><span class="WHIT">		</span><span class="PUNC">}</span><span class="PUNC">)</span><span class="PUNC">,</span><span class="WHIT">
+<span class='line'> 85</span> </span><span class="WHIT">		</span><span class="NAME">dataType</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="STRN">'json'</span><span class="PUNC">,</span><span class="WHIT">
+<span class='line'> 86</span> </span><span class="WHIT">		</span><span class="NAME">async</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="KEYW">true</span><span class="PUNC">,</span><span class="WHIT">
+<span class='line'> 87</span> </span><span class="WHIT">		</span><span class="NAME">success</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="PUNC">(</span><span class="NAME">result</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 88</span> </span><span class="WHIT">			</span><span class="COMM">//alert(result['pic_url']);</span><span class="WHIT">
+<span class='line'> 89</span> </span><span class="WHIT">			</span><span class="KEYW">if</span><span class="PUNC">(</span><span class="WHIT"> </span><span class="NAME">result</span><span class="WHIT"> </span><span class="PUNC">==</span><span class="WHIT"> </span><span class="KEYW">null</span><span class="WHIT"> </span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 90</span> </span><span class="WHIT">				</span><span class="NAME">$</span><span class="PUNC">(</span><span class="STRN">"#timeline-content"</span><span class="PUNC">)</span><span class="PUNC">.</span><span class="NAME">html</span><span class="PUNC">(</span><span class="STRN">"没有结果。"</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 91</span> </span><span class="WHIT">			</span><span class="PUNC">}</span><span class="WHIT"> </span><span class="KEYW">else</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 92</span> </span><span class="WHIT">				</span><span class="NAME">$</span><span class="PUNC">(</span><span class="STRN">"#timeline-content"</span><span class="PUNC">)</span><span class="PUNC">.</span><span class="NAME">html</span><span class="PUNC">(</span><span class="STRN">"加载中..."</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 93</span> </span><span class="WHIT">			</span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 94</span> </span><span class="WHIT">		</span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 95</span> </span><span class="WHIT">	</span><span class="PUNC">}</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 96</span> </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 97</span> </span><span class="COMM">/*
+<span class='line'> 98</span> function showPic(user_groupage_id){
+<span class='line'> 99</span> 	$.ajax({
+<span class='line'>100</span> 		url:'control.CharityProfile.php',
+<span class='line'>101</span> 		data:({
+<span class='line'>102</span> 			func:'showPic',
+<span class='line'>103</span> 			user_groupage_id: user_groupage_id
+<span class='line'>104</span> 		}),
+<span class='line'>105</span> 		dataType: 'json',
+<span class='line'>106</span> 		async: true,
+<span class='line'>107</span> 		success: function(result){
+<span class='line'>108</span> 			alert(result['pic_url']);
+<span class='line'>109</span> 		}
+<span class='line'>110</span> 	});
+<span class='line'>111</span> }
+<span class='line'>112</span> function showLoveNum(user_groupage_id){
+<span class='line'>113</span> 	$.ajax({
+<span class='line'>114</span> 		url:'control.CharityProfile.php',
+<span class='line'>115</span> 		data:({
+<span class='line'>116</span> 			func:'showLoveNum',
+<span class='line'>117</span> 			user_groupage_id: user_groupage_id
+<span class='line'>118</span> 		}),
+<span class='line'>119</span> 		dataType: 'json',
+<span class='line'>120</span> 		async: true,
+<span class='line'>121</span> 		success: function(result){
+<span class='line'>122</span> 			alert(result['love_num']);
+<span class='line'>123</span> 		}
+<span class='line'>124</span> 	});
+<span class='line'>125</span> }
+<span class='line'>126</span> function showMemberNum(user_groupage_id){
+<span class='line'>127</span> 	$.ajax({
+<span class='line'>128</span> 		url:'control.CharityProfile.php',
+<span class='line'>129</span> 		data:({
+<span class='line'>130</span> 			func:'showMemberNum',
+<span class='line'>131</span> 			user_groupage_id: user_groupage_id
+<span class='line'>132</span> 		}),
+<span class='line'>133</span> 		dataType: 'json',
+<span class='line'>134</span> 		async: true,
+<span class='line'>135</span> 		success: function(result){
+<span class='line'>136</span> 			alert(result['member_num']);
+<span class='line'>137</span> 		}
+<span class='line'>138</span> 	});
+<span class='line'>139</span> }
+<span class='line'>140</span> */</span></pre></body></html>

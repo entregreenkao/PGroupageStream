@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Date: Wed, 15 Feb 2012 10:53:57 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=18
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mcfn test微博app</title>
+</head>
+
+<body>
+	welcome !
+	<!-- 授权按钮 -->
+    <p><a href="https://api.weibo.com/oauth2/authorize?client_id=2798336716&redirect_uri=http%3A%2F%2Fwshare.us%2FWsharE_release%2Ftest%2FWsharE%2FCharity%2FPGroupageStream%2Fview.callback.php&response_type=code"><img src="weibo_login.png" title="点击进入授权页面" alt="点击进入授权页面" border="0" /></a></p>
+
+</body>
+</html>

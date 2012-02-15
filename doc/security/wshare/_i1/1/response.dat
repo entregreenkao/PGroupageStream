@@ -1,0 +1,40 @@
+HTTP/1.1 200 Partial Content
+Date: Wed, 15 Feb 2012 10:40:32 GMT
+Server: Apache
+Content-Range: bytes 0-1414/1415
+Content-Length: 1415
+Keep-Alive: timeout=10, max=2
+Connection: Keep-Alive
+Content-Type: text/html;charset=ISO-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /WsharE_release/test</title>
+ </head>
+ <body>
+<h1>Index of /WsharE_release/test</h1>
+<ul><li><a href="/WsharE_release/"> Parent Directory</a></li>
+<li><a href="1.png"> 1.png</a></li>
+<li><a href="SBIR_zerone_111118_03.ppt"> SBIR_zerone_111118_03.ppt</a></li>
+<li><a href="SBIR_zerone_111124_07.ppt"> SBIR_zerone_111124_07.ppt</a></li>
+<li><a href="WsharE/"> WsharE/</a></li>
+<li><a href="choose_club.png"> choose_club.png</a></li>
+<li><a href="ga(1).js"> ga(1).js</a></li>
+<li><a href="ga.js"> ga.js</a></li>
+<li><a href="join.png"> join.png</a></li>
+<li><a href="jot_min_view__zh_tw.js"> jot_min_view__zh_tw.js</a></li>
+<li><a href="just_marketing/"> just_marketing/</a></li>
+<li><a href="overlay.css"> overlay.css</a></li>
+<li><a href="reply.png"> reply.png</a></li>
+<li><a href="sample.xls"> sample.xls</a></li>
+<li><a href="search1.png"> search1.png</a></li>
+<li><a href="search_article.png"> search_article.png</a></li>
+<li><a href="search_club.png"> search_club.png</a></li>
+<li><a href="setting.png"> setting.png</a></li>
+<li><a href="standard-css-solitudenavy-ltr-ltr.css"> standard-css-solitudenavy-ltr-ltr.css</a></li>
+<li><a href="subscribe.png"> subscribe.png</a></li>
+<li><a href="welogo_cloud_small.png"> welogo_cloud_small.png</a></li>
+</ul>
+<address>Apache Server at wshare.us Port 80</address>
+</body></html>

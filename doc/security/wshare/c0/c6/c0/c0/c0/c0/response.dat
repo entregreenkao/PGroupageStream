@@ -1,0 +1,35 @@
+HTTP/1.1 200 Partial Content
+Date: Wed, 15 Feb 2012 10:39:01 GMT
+Server: Apache
+Content-Range: bytes 0-1358/1359
+Content-Length: 1359
+Keep-Alive: timeout=10, max=30
+Connection: Keep-Alive
+Content-Type: text/html;charset=ISO-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /WsharE_release/test/WsharE/Charity/PGroupageStream</title>
+ </head>
+ <body>
+<h1>Index of /WsharE_release/test/WsharE/Charity/PGroupageStream</h1>
+<ul><li><a href="/WsharE_release/test/WsharE/Charity/"> Parent Directory</a></li>
+<li><a href="PGroupageStream_mcfn-20110214-orign/"> PGroupageStream_mcfn-20110214-orign/</a></li>
+<li><a href="config.php"> config.php</a></li>
+<li><a href="control.PGroupageStream.php"> control.PGroupageStream.php</a></li>
+<li><a href="error_log"> error_log</a></li>
+<li><a href="lib/"> lib/</a></li>
+<li><a href="model.DBPGroupageStream.php"> model.DBPGroupageStream.php</a></li>
+<li><a href="model.FBPGroupageStream.php"> model.FBPGroupageStream.php</a></li>
+<li><a href="model.WBPGroupageStream.php"> model.WBPGroupageStream.php</a></li>
+<li><a href="saetv2.ex.class.php"> saetv2.ex.class.php</a></li>
+<li><a href="style.css"> style.css</a></li>
+<li><a href="view.PGroupageStream.js"> view.PGroupageStream.js</a></li>
+<li><a href="view.PGroupageStream.php"> view.PGroupageStream.php</a></li>
+<li><a href="view.callback.php"> view.callback.php</a></li>
+<li><a href="view.index.php"> view.index.php</a></li>
+<li><a href="weibo_login.png"> weibo_login.png</a></li>
+</ul>
+<address>Apache Server at wshare.us Port 80</address>
+</body></html>

@@ -1,0 +1,40 @@
+HTTP/1.1 200 Partial Content
+Date: Wed, 15 Feb 2012 10:40:32 GMT
+Server: Apache
+Content-Range: bytes 0-1282/1283
+Content-Length: 1283
+Keep-Alive: timeout=10, max=21
+Connection: Keep-Alive
+Content-Type: text/html;charset=ISO-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /WsharE_release/photo</title>
+ </head>
+ <body>
+<h1>Index of /WsharE_release/photo</h1>
+<ul><li><a href="/WsharE_release/"> Parent Directory</a></li>
+<li><a href="book.jpg"> book.jpg</a></li>
+<li><a href="book.png"> book.png</a></li>
+<li><a href="button.jpg"> button.jpg</a></li>
+<li><a href="button.jpg_"> button.jpg_</a></li>
+<li><a href="button2.jpg"> button2.jpg</a></li>
+<li><a href="button2.jpg_"> button2.jpg_</a></li>
+<li><a href="button2.jpg_2"> button2.jpg_2</a></li>
+<li><a href="buzzeRdeal_prize_phone.jpg"> buzzeRdeal_prize_phone.jpg</a></li>
+<li><a href="image002.jpg"> image002.jpg</a></li>
+<li><a href="image010.jpg"> image010.jpg</a></li>
+<li><a href="image012.jpg"> image012.jpg</a></li>
+<li><a href="image014.jpg"> image014.jpg</a></li>
+<li><a href="jquery-ui.min.js"> jquery-ui.min.js</a></li>
+<li><a href="jquery.js"> jquery.js</a></li>
+<li><a href="left.jpg"> left.jpg</a></li>
+<li><a href="post.jpg"> post.jpg</a></li>
+<li><a href="post.png"> post.png</a></li>
+<li><a href="right.jpg"> right.jpg</a></li>
+<li><a href="search.jpg"> search.jpg</a></li>
+<li><a href="search.png"> search.png</a></li>
+</ul>
+<address>Apache Server at wshare.us Port 80</address>
+</body></html>

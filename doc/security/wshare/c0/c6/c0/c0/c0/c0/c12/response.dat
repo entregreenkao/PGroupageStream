@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Date: Wed, 15 Feb 2012 10:53:57 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=28
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+
+<br />
+<b>Parse error</b>:  syntax error, unexpected T_STRING, expecting T_VARIABLE in <b>/home4/wshareus/public_html/WsharE_release/test/WsharE/Charity/PGroupageStream/control.PGroupageStream.php</b> on line <b>43</b><br />

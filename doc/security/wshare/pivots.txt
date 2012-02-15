@@ -1,0 +1,127 @@
+GET http://wshare.us/ name=http://wshare.us/ type=serv linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/ name=home4 type=dir linked=maybe dup=0 code=0 len=0 notes=2
+GET http://wshare.us/home4/wshareus/ name=wshareus type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/wshareus/public_html/ name=public_html type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/wshareus/public_html/WsharE_release/ name=WsharE_release type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/wshareus/public_html/WsharE_release/test/ name=test type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/wshareus/public_html/WsharE_release/test/WsharE/ name=WsharE type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/wshareus/public_html/WsharE_release/test/WsharE/Charity/ name=Charity type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/wshareus/public_html/WsharE_release/test/WsharE/Charity/PGroupageStream/ name=PGroupageStream type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/home4/wshareus/public_html/WsharE_release/test/WsharE/Charity/PGroupageStream/control.PGroupageStream.php name=control.PGroupageStream.php type=unknown linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/images/ name=images type=dir linked=maybe dup=0 returns_404 code=404 len=2610 notes=10
+GET http://wshare.us/images/I-ltr.png name=I-ltr.png type=unknown linked=maybe dup=0 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/img/ name=img type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/img/complete_logo.png name=complete_logo.png type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/img/facebook_like_button.jpg name=facebook_like_button.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/img/star_select_all.png name=star_select_all.png type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/img/wait_gif.gif name=wait_gif.gif type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/img/WsharE_logo_mid.png name=WsharE_logo_mid.png type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/ name=photo type=dir linked=yes dup=0 code=200 len=1283 notes=10
+GET http://wshare.us/photo/book.jpg name=book.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/book.png name=book.png type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/button.jpg name=button.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/button.jpg_ name=button.jpg_ type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/button2.jpg name=button2.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/button2.jpg_ name=button2.jpg_ type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/button2.jpg_2 name=button2.jpg_2 type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/buzzeRdeal_prize_phone.jpg name=buzzeRdeal_prize_phone.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/image002.jpg name=image002.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/image010.jpg name=image010.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/image012.jpg name=image012.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/image014.jpg name=image014.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/jquery-ui.min.js name=jquery-ui.min.js type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/jquery.js name=jquery.js type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/left.jpg name=left.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/post.jpg name=post.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/post.png name=post.png type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/right.jpg name=right.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/search.jpg name=search.jpg type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/photo/search.png name=search.png type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/system/ name=system type=dir linked=maybe dup=0 returns_404 code=404 len=2610 notes=17
+GET http://wshare.us/system/app/ name=app type=dir linked=maybe dup=0 returns_404 code=404 len=2610 notes=4
+GET http://wshare.us/system/app/images/ name=images type=dir linked=maybe dup=0 returns_404 code=404 len=2610 notes=9
+GET http://wshare.us/system/app/images/spinner.gif name=spinner.gif type=unknown linked=maybe dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/ name=test type=dir linked=yes dup=0 code=200 len=1415 notes=11
+GET http://wshare.us/test/\x27/ name=\x27 type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=2
+GET http://wshare.us/test/\x27,ig= name=ig type=unknown linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/test/\x27,ng=\x27\x3cspan%20class%3D name=ng type=unknown linked=yes dup=0 bogus returns_404 code=404 len=2610 notes=10
+GET http://wshare.us/test/\x27,ng=\x27\x3cspan%20class%3D?v=3 name=v type=param linked=maybe dup=0 bogus returns_404 code=404 len=2610 notes=6
+GET http://wshare.us/test/google-analytics.com/ name=google-analytics.com type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/test/google-analytics.com/ga.js name=ga.js type=unknown linked=maybe dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/img/ name=img type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=10
+GET http://wshare.us/test/img/WsharE_logo_mid.png name=WsharE_logo_mid.png type=unknown linked=yes dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/ name=just_marketing type=dir linked=yes dup=0 code=200 len=408 notes=9
+GET http://wshare.us/test/just_marketing/img/ name=img type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=3
+GET http://wshare.us/test/just_marketing/img/04-4.jpg name=04-4.jpg type=unknown linked=yes dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/help_main_new_clip_image002.gif name=help_main_new_clip_image002.gif type=unknown linked=yes dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/social_corp.png name=social_corp.png type=unknown linked=maybe dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/social_help.png name=social_help.png type=unknown linked=maybe dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/social_home.png name=social_home.png type=unknown linked=maybe dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/social_light.png name=social_light.png type=unknown linked=maybe dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/tipadvancesearch.jpg name=tipadvancesearch.jpg type=unknown linked=yes dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/tipdonation.jpg name=tipdonation.jpg type=unknown linked=yes dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/img/tipevent.jpg name=tipevent.jpg type=unknown linked=yes dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/just_marketing/de.o name=de.o type=file linked=no dup=0 code=404 len=40 notes=4
+GET http://wshare.us/test/just_marketing/de.tmp name=de.tmp type=file linked=no dup=1 code=404 len=40 notes=4
+GET http://wshare.us/test/just_marketing/just_marketing.php name=just_marketing.php type=pathinfo linked=yes dup=0 code=200 len=8541 notes=5
+GET http://wshare.us/test/lib/ name=lib type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=1
+GET http://wshare.us/test/lib/jquery/ name=jquery type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=4
+GET http://wshare.us/test/lib/jquery/tablesorter.com/ name=tablesorter.com type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=9
+GET http://wshare.us/test/lib/jquery/tablesorter.com/docs/ name=docs type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=2
+GET http://wshare.us/test/lib/jquery/tablesorter.com/docs/css/ name=css type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=6
+GET http://wshare.us/test/lib/jquery/tablesorter.com/docs/css/jq.css name=jq.css type=unknown linked=yes dup=1 returns_404 code=404 len=2610 notes=0
+GET http://wshare.us/test/lib/jquery/tablesorter.com/themes/ name=themes type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=10
+GET http://wshare.us/test/lib/jquery/tablesorter.com/themes/blue/ name=blue type=dir linked=yes dup=0 returns_404 code=404 len=2610 notes=6
+GET http://wshare.us/test/lib/jquery/tablesorter.com/themes/blue/style.css name=style.css type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/test/p/ name=p type=dir linked=maybe dup=0 code=0 len=0 notes=1
+GET http://wshare.us/test/p/__utm.gif name=__utm.gif type=unknown linked=maybe dup=1 code=0 len=0 notes=1
+GET http://wshare.us/test/WsharE/ name=WsharE type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/test/WsharE/Charity/ name=Charity type=dir linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/test/WsharE/Charity/PGroupageStream/ name=PGroupageStream type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/test/WsharE/Charity/PGroupageStream/view.PGroupageStream.js name=view.PGroupageStream.js type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/test/jot_min_view__zh_tw.js name=jot_min_view__zh_tw.js type=file linked=yes dup=0 code=200 len=173852 notes=9
+GET http://wshare.us/test/overlay.css name=overlay.css type=file linked=yes dup=0 code=200 len=1137 notes=6
+GET http://wshare.us/test/reply.png name=reply.png type=file linked=yes dup=0 code=200 len=4673 notes=4
+GET http://wshare.us/test/sample.xls name=sample.xls type=file linked=yes dup=0 code=200 len=200000 notes=4
+GET http://wshare.us/test/search1.png name=search1.png type=file linked=yes dup=0 code=200 len=31930 notes=4
+GET http://wshare.us/test/search_article.png name=search_article.png type=file linked=yes dup=0 code=200 len=24371 notes=1
+GET http://wshare.us/test/search_club.png name=search_club.png type=file linked=yes dup=0 code=200 len=25041 notes=2
+GET http://wshare.us/test/setting.png name=setting.png type=file linked=yes dup=0 code=200 len=15168 notes=7
+GET http://wshare.us/test/standard-css-solitudenavy-ltr-ltr.css name=standard-css-solitudenavy-ltr-ltr.css type=file linked=yes dup=0 code=200 len=117723 notes=3
+GET http://wshare.us/test/subscribe.png name=subscribe.png type=file linked=yes dup=0 code=200 len=28179 notes=10
+GET http://wshare.us/test/welogo_cloud_small.png name=welogo_cloud_small.png type=file linked=yes dup=0 code=200 len=9396 notes=12
+GET http://wshare.us/test/1.png name=1.png type=unknown linked=yes dup=0 code=200 len=23768 notes=1
+GET http://wshare.us/test/choose_club.png name=choose_club.png type=unknown linked=yes dup=0 code=200 len=19229 notes=1
+GET http://wshare.us/test/ga(1).js name=ga(1).js type=unknown linked=yes dup=0 code=200 len=27026 notes=2
+GET http://wshare.us/test/ga.js name=ga.js type=unknown linked=yes dup=1 code=200 len=27026 notes=2
+GET http://wshare.us/test/join.png name=join.png type=unknown linked=yes dup=0 code=200 len=31286 notes=1
+GET http://wshare.us/test/SBIR_zerone_111118_03.ppt name=SBIR_zerone_111118_03.ppt type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/test/SBIR_zerone_111124_07.ppt name=SBIR_zerone_111124_07.ppt type=unknown linked=yes dup=0 code=200 len=200000 notes=1
+GET http://wshare.us/WsharE_release/ name=WsharE_release type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/ name=test type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/ name=WsharE type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/ name=Charity type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/ name=PGroupageStream type=dir linked=yes dup=0 code=200 len=1359 notes=12
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/weibo-sdk/ name=weibo-sdk type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/style.css name=style.css type=file linked=yes dup=0 code=200 len=994 notes=3
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/weibo_login.png name=weibo_login.png type=file linked=yes dup=0 code=200 len=16128 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/lib name=lib type=pathinfo linked=yes dup=0 code=200 len=463 notes=2
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/model.DBPGroupageStream.php name=model.DBPGroupageStream.php type=pathinfo linked=yes dup=0 code=200 len=0 notes=2
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/model.FBPGroupageStream.php name=model.FBPGroupageStream.php type=pathinfo linked=yes dup=1 code=200 len=0 notes=2
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/model.WBPGroupageStream.php name=model.WBPGroupageStream.php type=pathinfo linked=yes dup=0 code=200 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/PGroupageStream_mcfn-20110214-orign name=PGroupageStream_mcfn-20110214-orign type=pathinfo linked=yes dup=0 code=200 len=911 notes=3
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/view.callback.php name=view.callback.php type=pathinfo linked=yes dup=0 code=200 len=16 notes=4
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/view.PGroupageStream.php name=view.PGroupageStream.php type=pathinfo linked=yes dup=0 code=200 len=1328 notes=4
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/\x5c\x22 name=\x5c\x22 type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/config.php name=config.php type=unknown linked=yes dup=0 code=200 len=0 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/control.PGroupageStream.php name=control.PGroupageStream.php type=unknown linked=yes dup=0 code=200 len=225 notes=3
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/error_log name=error_log type=unknown linked=yes dup=0 code=200 len=536 notes=4
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/saetv2.ex.class.php name=saetv2.ex.class.php type=unknown linked=yes dup=0 code=200 len=0 notes=3
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/view.index.php name=view.index.php type=unknown linked=yes dup=0 code=200 len=670 notes=1
+GET http://wshare.us/WsharE_release/test/WsharE/Charity/PGroupageStream/view.PGroupageStream.js name=view.PGroupageStream.js type=unknown linked=yes dup=0 code=200 len=6503 notes=4
+GET http://wshare.us/controlpanel name=controlpanel type=pathinfo linked=yes dup=0 code=301 len=0 notes=3
+GET http://wshare.us/controlpanel/searcher/ name=searcher type=dir linked=yes dup=0 code=0 len=0 notes=1
+GET http://wshare.us/controlpanel/searcher/add_post.js name=add_post.js type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/controlpanel/searcher/add_tab.js name=add_tab.js type=unknown linked=yes dup=1 code=0 len=0 notes=1
+GET http://wshare.us/__utm.gif name=__utm.gif type=unknown linked=maybe dup=1 code=0 len=0 notes=1
+GET http://wshare.us:2082/ name=http://wshare.us:2082/ type=serv linked=yes dup=0 code=0 len=0 notes=1
