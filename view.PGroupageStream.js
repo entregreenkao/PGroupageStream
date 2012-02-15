@@ -86,6 +86,11 @@ function showPGroupagePost(user_groupage_id, start_num, end_num, social_network)
 		async: true,
 		success: function(result){
 			//alert(result['pic_url']);
+			if( result == null ) {
+				$("#timeline-content").html("没有结果。");
+			} else {
+				$("#timeline-content").html("加载中...");
+			}
 		}
 	});
 }

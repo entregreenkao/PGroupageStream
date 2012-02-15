@@ -2,11 +2,14 @@
 class PGroupageStream{
 	var $model;
 	var $fbmodel;
+	var $wbmodel;
 	public function __construct(){
 		require 'model.DBPGroupageStream.php';
 		require 'model.FBPGroupageStream.php';
+		require 'model.WBPGroupageStream.php';
 		$this->model = new DBPGroupageStream();	
 		$this->fbmodel = new FBPGroupStream();
+		$this->wbmodel = new WBGroupStream();
 	}
 	
 	public function showPGroupage($user_groupage_id ,$tag_list,$start_num,$end_num){
@@ -32,13 +35,17 @@ class PGroupageStream{
 		$result = $this->model->addtag($user_groupage_id,$pgroupage_tag_list);
 		echo json_encode($result);
 	}
-	public function tagPGorupage($user_groupage_id,$pgroupage_tag_list){
-		$result = $this->model->addtag($user_groupage_id,$pgroupage_tag_list);
-		echo json_encode($result);
-	}
+	//public function tagPGorupage($user_groupage_id,$pgroupage_tag_list){
+	//	$result = $this->model->addtag($user_groupage_id,$pgroupage_tag_list);
+	//	echo json_encode($result);
+	//}
 	
-	public showPGroupagePost($user_groupage_id, $start_num, $end_num, $social_network){
+	public showPGroupagePost($user_groupage_id, $start_num = 0, $end_num = 0, $social_network ){
 		// 微博
+		
+		//if ( $social_network == 'weibo'){
+		$result = $this->wbmodel->user_timeline_by_id($user_groupage_id);
+		//}
 		echo json_encode($result);
 	}
 }
@@ -117,7 +124,8 @@ else if ( $_GET['func'] == "sendPost"){
 		return;
 	else
 		$user_groupage_id=$_GET['user_groupage_id'];
-		
+
+	/*
 	if(!isset($_GET['start_num']))
 		return;
 	else
@@ -132,6 +140,7 @@ else if ( $_GET['func'] == "sendPost"){
 		return;
 	else
 		$social_network=$_GET['social_network'];
+	*/
 	//以下可以呼叫不同social network的implementation
 	$cp->showPGroupagePost($user_groupage_id, $start_num, $end_num, $social_network);
 	

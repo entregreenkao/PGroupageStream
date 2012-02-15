@@ -1,3 +1,7 @@
+<?php 
+	session_start();
+	var_dump( $_SESSION);
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,26 +12,39 @@
 		<script src="http://WsharE.us/controlpanel/searcher/add_post.js"  type="text/javascript" ></script>
 		
 		<script src="http://wshare.us/test/WsharE/Charity/PGroupageStream/view.PGroupageStream.js" type="text/javascript"></script> 
+		
+		<script src="http://wshare.us/photo/jquery.js" type="text/javascript"></script>
+		<script src="http://wshare.us/photo/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" charset="utf-8" href="style.css">
 	</head>
 	<body>
-		<div >
-			<div id="PGroupageStream-tabs" class="tabs">
-				<ul id="PGroupageStream-tab-list" class="tab-list"></ul>
+		<div class="body-wrapper">
+				<div class="body-content">
+				
+					<div class="main-content">
+					
+					<div class="timeline-content">
+						loading...
+						
+					</div>
+					<div class="timeline-page">
+						
+					</div>
+				</div>
+				
+				<div class="footer"></div>
+					
+				</div>
 			</div>
-		</div>
 		<script>
-			$( "#PGroupageStream-tabs" ).tabs({ closable: true, event: 'click' });	
-			/*
-			$(document).ready(function() {
-				$("#accordion").accordion();
-			});*/
+			 
+			 showPGroupagePost( '<?=$_REQUEST['user_groupage_id']?>',
+							   <?= is_null( $_REQUEST['start_num'] ) ? 0 : $_REQUEST['start_num'] ?>,
+							   <?= is_null( $_REQUEST['end_num'] ) ? 0 : $_REQUEST['end_num'] ?>,
+							   '<?= is_null( $_REQUEST['social_network'] ) ? 'weibo' : $_REQUEST['social_network'] ?>'
+									    );
+		   
 			
-			addTab(0, "我的愛心團");
-			addTab(1, "選擇愛心團");
-			$( "#PGroupageStream-tabs" ).tabs({ event: 'click' });
-			$( "#PGroupageStream-tabs" ).tabs("select", 1);
-			var $tabs = $('#PGroupageStream-tabs').tabs();
-			var selected = $tabs.tabs('option', 'selected');
 			
 		</script>
 	</body>
